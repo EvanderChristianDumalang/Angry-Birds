@@ -9,7 +9,7 @@ public class BlackBird : Bird
     public float force = 100;
     public bool isExplode = false;
     public GameObject ExplosionEffect;
-
+    //Script Explosion
     public void Explode()
     {
         if (isExplode == false)
@@ -30,7 +30,7 @@ public class BlackBird : Bird
         }
 
     }
-
+    //Explode on Impact
     void OnCollisionEnter2D(Collision2D _other)
     {
         Explode();
